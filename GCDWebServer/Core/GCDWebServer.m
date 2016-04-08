@@ -154,7 +154,7 @@ static void _ExecuteMainThreadRunLoopSources() {
 
 @interface GCDWebServer () {
 @private
-  id<GCDWebServerDelegate> __unsafe_unretained _delegate;
+  id<GCDWebServerDelegate> __weak _delegate;
   dispatch_queue_t _syncQueue;
   dispatch_group_t _sourceGroup;
   NSMutableArray* _handlers;

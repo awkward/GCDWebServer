@@ -286,7 +286,7 @@ extern NSString* const GCDWebServerAuthenticationMethod_DigestAccess;
 /**
  *  Sets the delegate for the server.
  */
-@property(nonatomic, assign) id<GCDWebServerDelegate> delegate;
+@property(nonatomic, weak) id<GCDWebServerDelegate> delegate;
 
 /**
  *  Returns YES if the server is currently running.
